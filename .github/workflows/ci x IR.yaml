@@ -11,6 +11,7 @@ jobs:
         uses: invisirisk/pse-action@develop
         with:
           app_token: trdLBtUtMGvMkEmcqV8OSOnd454kobxmhZ3pYmJvoEuGJ4En_TXpCrnFtbkkiKTkcoPiKS1uLO5lxtvCByTexg
+          api_url: "https://app.dev.invisirisk.com/"
           mode: docker-intercept
       # ============= InvisiRisk Setup End =============
       - name: Checkout repository
