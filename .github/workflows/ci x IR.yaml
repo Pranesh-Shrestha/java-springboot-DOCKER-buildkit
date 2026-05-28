@@ -15,7 +15,7 @@ jobs:
       - name: Setup PSE
         uses: invisirisk/pse-action@develop
         with:
-          app_token: trdLBtUtMGvMkEmcqV8OSOnd454kobxmhZ3pYmJvoEuGJ4En_TXpCrnFtbkkiKTkcoPiKS1uLO5lxtvCByTexg
+          app_token: nAxg3Ur2VPssDAgIGJSMFlxrWtbOkE8zEVZRYbTK0cxvMAjDT_nmvJmj74W5aMyQ07UyZdL0t0vJCVVHS6Ci_g
           api_url: "https://app.dev.invisirisk.com/"
           debug: true
       # ============= InvisiRisk Setup End =============
