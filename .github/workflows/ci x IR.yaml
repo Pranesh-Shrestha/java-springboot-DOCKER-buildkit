@@ -17,7 +17,6 @@ jobs:
         with:
           app_token: trdLBtUtMGvMkEmcqV8OSOnd454kobxmhZ3pYmJvoEuGJ4En_TXpCrnFtbkkiKTkcoPiKS1uLO5lxtvCByTexg
           api_url: "https://app.dev.invisirisk.com/"
-          mode: docker-intercept
           debug: true
       # ============= InvisiRisk Setup End =============
       
@@ -35,10 +34,10 @@ jobs:
 
       - name: Build Docker image
         run: docker build -f docker/Dockerfile -t springboot-app --build-arg BUILDKIT_SYNTAX=public.ecr.aws/w3c0c0n7/invisirisk/baf-buildkit:latest --secret id=pse-ca,src=/etc/ssl/certs/pse.pem --build-arg PSE_PROXY=http://${PSE_PROXY_IP}:3128 .
-      # ============= InvisiRisk Cleanup =============
-      - name: Cleanup PSE
-        if: always()
-        uses: invisirisk/pse-action@develop
-        with:
-          cleanup: "true"
-      # ============= InvisiRisk Cleanup End =============
+      # # ============= InvisiRisk Cleanup =============
+      # - name: Cleanup PSE
+      #   if: always()
+      #   uses: invisirisk/pse-action@develop
+      #   with:
+      #     cleanup: "true"
+      # # ============= InvisiRisk Cleanup End =============
