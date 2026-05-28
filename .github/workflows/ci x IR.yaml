@@ -2,6 +2,11 @@ name: java spring boot docker build kit x IR
 on:
   workflow_dispatch:
 
+permissions: 
+  checks: write
+  contents: write
+  actions: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
